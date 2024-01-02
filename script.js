@@ -56,7 +56,6 @@
                     saveTasksToLocalStorage();
                 });
 
-                // Add event listener for the checkbox to toggle strikethrough
                 li.querySelector('.task-checkbox').addEventListener('change', function () {
                     toggleStrikethrough(li);
                     saveTasksToLocalStorage();
