@@ -1,17 +1,21 @@
-body {
-    background-color: #f8f9fa;
-    min-height: 100vh;
-    min-width: 100vw !important;
-    background-image: linear-gradient(80deg, #06beb6, #48b1bf);
+html, body{
     overflow: hidden;
 }
+body {
+    position: relative;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    background-image: linear-gradient(80deg, #06beb6, #48b1bf);
+}
 .header{
-    padding: 20px 0 10px 0;
+    margin: 20px 0 10px 0;
+    padding: 0;
 }
 #title{
     color:#faf9f6;
     font-size: 70px;
     font-family: 'Permanent Marker', cursive;
+    padding: 0;
 }
 
 #taskInput{
@@ -84,10 +88,10 @@ ul{
     filter: blur(80px);
     animation: down 40s infinite;
     z-index: -1;
+    overflow: hidden !important;
 }
 #down{
     position: absolute;
-    right: 0;
     height: 500px;
     width: 500px;
     border-radius: 50%;
@@ -95,10 +99,11 @@ ul{
     filter: blur(80px);
     z-index: -1;
     animation: up 30s infinite;
+    overflow: hidden !important;
+
 }
 #right{
     position: absolute;
-    right: -1000px;
     height: 1000px;
     width: 1000px;
     border-radius: 50%;
@@ -106,6 +111,8 @@ ul{
     filter: blur(80px);
     z-index: -1;
     animation: left 40s infinite;
+    overflow: hidden !important;
+
 }
 @keyframes down{
     0%, 100%{
@@ -118,9 +125,11 @@ ul{
 @keyframes up{
     0%, 100%{
         bottom: -100px;
+        right: 0;
     }
     70%{
         bottom: 700px;
+        right: 0;
     }
 }
 @keyframes left{
@@ -136,7 +145,7 @@ ul{
 #watermark{
     font-size: 15px;
     color: #faf9f6;
-    margin: 0 0 10px -35px;
+    margin: 10px 0 10px -35px;
 }
 
 a{
