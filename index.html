@@ -10,28 +10,28 @@
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
     </style>
     <link rel="icon" href="to-do-list-png-transparent-image-download-69250.png" type="image/png">
-
 </head>
 <body>
-    <div class="header">
-        <h1 class="text-center" id="title">To-Do List</h1>
-    </div>
-    <div class="container todo-container">
-        <form id="todoForm">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" id="taskInput" placeholder="Add a new task" required>
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="submit" id="add-btn">Add Task</button>
-                </div>
-            </div>
-        </form>
-        <div class="container" id="task-list-container">
-            <ul class="task-list" id="taskList"></ul>
+    <div class="container-fluid">
+        <div class="container-fluid row align-items-center header">
+            <h1 class=" container-fluid text-center" id="title">To-Do List</h1>
         </div>
+        <div class="container-fluid row align-center todo-container">
+            <form id="todoForm">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="taskInput" placeholder="Add a new task" required>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit" id="add-btn">Add Task</button>
+                    </div>
+                </div>
+            </form>
+            <div class="container-fluid col" id="task-list-container">
+                <ul class="task-list" id="taskList"></ul>
+            </div>
+        </div>
+
+        <h6 class="text-center position-absolute bottom-0 start-50" id="watermark">by <a href="https://github.com/TianDiaz" target="_blank">TianDiaz</a></h6>
     </div>
-
-    <h6 class="text-center position-absolute bottom-0 start-50" id="watermark">by <a href="https://github.com/TianDiaz" target="_blank">TianDiaz</a></h6>
-
     <section id="up"></section>
     <section id="down"></section>
     <section id="right"></section>
@@ -40,9 +40,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
-    <script>
-          window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
